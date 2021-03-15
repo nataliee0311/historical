@@ -1,0 +1,28 @@
+.header {
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin: auto 50px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.logo img {
+  width: 100%;
+  height: auto; 
+}
+
+.menu {
+  margin: auto 50px;
+}
+
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item,
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3em;
+}
