@@ -8,10 +8,10 @@ class Footer extends React.Component {
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="">
+      <div className="info">
         <div>26 East Main Street,</div>
         <div>Norton, MA 02766</div>
-        <div>(312)669-0830</div>
+        <div>(508)285-8300</div>
         <div>nortonhistorical@gmail.com</div>
       </div>
     </div>

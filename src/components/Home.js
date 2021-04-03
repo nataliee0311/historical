@@ -1,54 +1,52 @@
 import React from "react";
 import Topbar from "./Topbar";
 import "../css/home.css";
-import {Footer as Bottom} from "./Footer"
+import { Footer as Bottom } from "./Footer";
 import { Layout, Carousel } from "antd";
+import { LeftCircleOutlined } from "@ant-design/icons";
+import home1 from "../assets/home1.jpg";
+import home2 from "../assets/home2.jpg";
+import home3 from "../assets/home3.jpg";
+import home4 from "../assets/home4.jpg";
 
-const { Content, Footer } = Layout;
-const contentStyle = {
-  height: "500px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+const Home = () => {
+  const { Content, Footer } = Layout;
 
-class Home extends React.Component {
-  render = () => (
+  return (
     <Layout className="layout">
-      <Topbar />
-      <Content style={{ padding: "0 50px" }}>
+      <Topbar selectedKey={"Home"} />
+      <Content>
+        <Carousel className="carousel" autoplay>
+          <div className="container">
+            {/* <LeftCircleOutlined className="prev-btn"/> */}
+            <img src={home1} alt="first" />
+          </div>
+          <div className="container">
+            <img src={home2} alt="second" />
+          </div>
+          <div className="container">
+            <img src={home3} alt="third" />
+          </div>
+          <div className="container">
+            <img src={home4} alt="fourth" />
+          </div>
+        </Carousel>
         <div className="site-layout-content">
-          <Carousel autoplay>
-            <div>
-              <h3 style={contentStyle}>1</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>2</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>3</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>4</h3>
-            </div>
-          </Carousel>
-        </div>
-        <div className="site-layout-content">
-          <h1>mauris nunc congue nisi vitae suscipit tellus mauris</h1>
+          <h1>Norton Historical Society</h1>
           <p>
-            nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi
-            tincidunt augue interdum velit euismod in pellentesque massa
-            placerat duis ultricies lacus sed turpis tincidunt id aliquet risus
-            feugiat in
+            Who we are: We are 501(c)(3) non-profit corporation dedicated to “preserving material relative to the history of Norton.”
           </p>
+          <p className="bold" style={{display: "inline"}}>Recent Update: </p><p style={{display: "inline"}}>The Museum is current close due to COVID-19 pandemic</p>
+          <p>Email or call to connect us</p>
+          <p className="bold">nortonhistorical@gmail.com</p>
+          <p className="bold">(508)285-8300</p>
         </div>
       </Content>
       <Footer>
-          <Bottom />
+        <Bottom />
       </Footer>
     </Layout>
   );
-}
+};
 
 export default Home;

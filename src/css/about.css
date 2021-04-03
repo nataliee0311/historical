@@ -1,0 +1,56 @@
+@import "~antd/dist/antd.css";
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+.text1 {
+  text-align: center;
+  font-size: 18px;
+  width: 1000px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.subcat {
+  text-align: center;
+  font-size: 24px;
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-1 {
+  padding: 10px;
+  text-align: left;
+  background-color: #0a387e;
+  color: white;
+  font-size: 30px;
+}
+
+.pic {
+  width: 200px;
+  height: 150px;
+  margin: auto 0px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ruthimg {
+  width: 200px;
+  height: 150px;
+  margin: auto 0px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+}
+img {
+  max-width: 96.9%;
+}
