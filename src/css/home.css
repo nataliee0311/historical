@@ -3,10 +3,53 @@
   min-height: 280px;
   padding: 24px;
   background: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.site-layout-content h1 {
+  font-size: calc(2.8rem + (30 - 28) * ((100vw - 400px) / (1200 - 400)));
+}
+
+.site-layout-content p {
+  font-size: 20px;
 }
 
 .site-layout .site-layout-background {
   background: #fff;
+}
+.bold {
+  font-weight: bold;
+}
+.container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  max-height: 800px;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 60%;
+  z-index: 100;
+  font-size: 48px;
+  padding: 20px;
+}
+
+.next-btn {
+  position: absolute;
+  top: 60%;
+  z-index: 100;
+  font-size: 48px;
+  right: 0;
+  padding: 20px;
+}
+
+.carousel img {
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 .carousel-inside {
@@ -16,4 +59,3 @@
   text-align: "center";
   background: "#364d79";
 }
-

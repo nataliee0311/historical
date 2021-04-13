@@ -1,6 +1,12 @@
 .footer {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
+}
+
+.info {
+    text-align: right;
 }

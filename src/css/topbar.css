@@ -1,28 +1,46 @@
+.topbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 40%);
+  /* border-bottom: 1px solid #000; */
+}
+
 .header {
-  min-height: 150px;
   display: flex;
-  justify-content: center;
+  max-width: 1000px;
+  position: relative;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo {
   width: 120px;
   height: 120px;
-  margin: auto 50px;
+  margin: 0;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .logo img {
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 .menu {
-  margin: auto 50px;
+  margin: 0;
 }
 
-
-.ant-menu-dark.ant-menu-horizontal > .ant-menu-item,
-.ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu {
+.ant-nmsl {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.3em;
+  font-size: 18px;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
 }

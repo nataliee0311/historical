@@ -1,0 +1,23 @@
+@import "~antd/dist/antd.css";
+.site-layout-content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.carousel-inside {
+  height: "160px";
+  color: "#000";
+  line-height: "160px";
+  text-align: "center";
+  background: "#364d79";
+}
+
+.card-content {
+    display: inline-block;
+    padding: 24px;
+}
